@@ -3,21 +3,13 @@ const postfixString = "Script"
 
 // Regular function
 function checkIfMatchPostfixRegular(string) {
-
-    let stringLength = string.length
-    if(stringLength >= 6 && string.indexOf(postfixString) == stringLength - 6){
-        return true
-    }
-    return false
+    return string.endsWith(postfixString)
 }
 
 // Arrow function
 const checkIfMatchPostfixArrow = string => {
-    let stringLength = string.length
-    if(stringLength >= 6 && string.indexOf(postfixString) == stringLength - 6){
-        return true
-    }
-    return false
+    return string.endsWith(postfixString)
+
 }
 
 const sampleInput = "javaScript"
