@@ -3,7 +3,7 @@
 function getLongestStringRegular(sArray) {
     let longestString = ""
     sArray.forEach(string => {
-        if(string.length > longestString.length) {
+        if (string.length > longestString.length) {
             longestString = string
         }
     });
@@ -15,7 +15,7 @@ function getLongestStringRegular(sArray) {
 const getLongestStringArrow = sArray => {
     let longestString = ""
     sArray.forEach(string => {
-        if(string.length > longestString.length) {
+        if (string.length > longestString.length) {
             longestString = string
         }
     });
