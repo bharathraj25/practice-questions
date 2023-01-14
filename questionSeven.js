@@ -10,5 +10,17 @@ function concateStringsInArrayRegular(sArray) {
     return concateResultString
 }
 
+// Arrow function
+const concateStringsInArrayArrow = sArray => {
+
+    let concateResultString = ""
+    sArray.forEach(string => {
+        concateResultString += string.slice(1)
+    });
+
+    return concateResultString
+}
+
 const sampleInput = ["code", "academy"]
 console.log(concateStringsInArrayRegular(sampleInput))
+console.log(concateStringsInArrayArrow(sampleInput))
