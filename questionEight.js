@@ -13,5 +13,19 @@ function countVowelsRegular(string) {
     return vowelCount
 }
 
+// Arrow function
+const countVowelsArrow = string => {
+    
+    let vowelCount = 0
+    for(let c = 0; c <= string.length; c++) {
+        if(vowels.includes(string[c])){
+            vowelCount += 1
+        }
+    }
+
+    return vowelCount
+}
+
 const sampleInput = "codeacademy"
 console.log(countVowelsRegular(sampleInput))
+console.log(countVowelsArrow(sampleInput))
