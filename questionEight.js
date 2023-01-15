@@ -4,8 +4,8 @@ const vowels = ["a", "e", "i", "o", "u"]
 function countVowelsRegular(string) {
     
     let vowelCount = 0
-    for(let c = 0; c <= string.length; c++) {
-        if(vowels.includes(string[c])){
+    for(let c = 0; c < string.length; c++) {
+        if(vowels.includes(string[c].toLowerCase())){
             vowelCount += 1
         }
     }
@@ -17,8 +17,8 @@ function countVowelsRegular(string) {
 const countVowelsArrow = string => {
     
     let vowelCount = 0
-    for(let c = 0; c <= string.length; c++) {
-        if(vowels.includes(string[c])){
+    for(let c = 0; c < string.length; c++) {
+        if(vowels.includes(string[c].toLowerCase())){
             vowelCount += 1
         }
     }
